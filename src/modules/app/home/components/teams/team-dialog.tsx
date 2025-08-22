@@ -7,7 +7,7 @@ import {
 } from '~/components/ui/avatar'
 import { APP_IMAGE_URL } from '~/constant/app-url';
 import type { UserDetail } from '~/interface/user';
-import { AppDialog, AppSkeleton } from '~/modules/shared'
+import { AppDialog, /*AppSkeleton*/ } from '~/modules/shared'
 
 interface TeamDialogProps {
   isOpen: boolean;
