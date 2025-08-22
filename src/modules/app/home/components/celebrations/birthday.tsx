@@ -1,4 +1,5 @@
 import { useEffect, type FunctionComponent } from 'react'
+import { format } from 'date-fns'
 
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
 
@@ -7,7 +8,6 @@ import { AppAccordion, AppCard } from '~/modules/shared'
 import { useAppSelector } from '~/hooks/useAppSelector'
 import { useAppDispatch } from '~/hooks/useAppDispatch'
 import { fetchTeams, fetchUpcomingTeams } from '~/features/teamThunks'
-import { formatDate } from '~/lib/utils'
 import { APP_IMAGE_URL } from '~/constant/app-url'
 import type { AccordionItems } from '~/interface/app-accordion'
 
@@ -52,7 +52,7 @@ export const Birthdays: FunctionComponent = () => {
                     <img src={BirthdayIcon} className="w-[18px] h-[21.49px]" />
                   </div>
 
-                  <p className="text-[#545454] text-[13px] font-normal">{formatDate(user?.birthDate)}</p>
+                  <p className="text-[#545454] text-[13px] font-normal">{format(new Date(), 'MMM dd')}</p>
                 </div>
               </div>
             </AppCard>
@@ -89,7 +89,7 @@ export const Birthdays: FunctionComponent = () => {
                     <img src={BirthdayIcon} className="w-[18px] h-[21.49px]" />
                   </div>
 
-                  <p className="text-[#545454] text-[13px] font-normal">{formatDate(user?.birthDate)}</p>
+                  <p className="text-[#545454] text-[13px] font-normal">{format(new Date(), 'MMM dd')}</p>
                 </div>
               </div>
             </AppCard>

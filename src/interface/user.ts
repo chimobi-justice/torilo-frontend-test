@@ -2,7 +2,7 @@ export interface User {
   id: number;
   firstName: string;
   lastName: string;
-  birthDate?: string;
+  birthDate: string;
   company: {
     department?: string;
   };

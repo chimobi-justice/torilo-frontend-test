@@ -1,4 +1,5 @@
 import { type FunctionComponent } from 'react'
+import { format } from 'date-fns'
 
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
 import { Separator } from '~/components/ui/separator'
@@ -6,7 +7,6 @@ import { Badge } from '~/components/ui/badge'
 
 import { AppCard } from '~/modules/shared'
 import { APP_IMAGE_URL } from '~/constant/app-url'
-import { formatDate } from '~/lib/utils'
 import type { User } from '~/interface/user'
 
 type OnGoingProps = {
@@ -48,7 +48,7 @@ export const UpComing: FunctionComponent<OnGoingProps> = ({ users}) => {
 
           <div className="flex gap-4 p-2 items-center">
             <div>
-              <p className="text-[10px] font-normal">Start Date: <span className="font-semibold">{formatDate(user?.birthDate)}</span></p>
+              <p className="text-[10px] font-normal">Start Date: <span className="font-semibold">{format(new Date(), 'MMM dd')}</span></p>
             </div>
 
 
@@ -56,7 +56,7 @@ export const UpComing: FunctionComponent<OnGoingProps> = ({ users}) => {
               <Separator orientation="vertical" />
 
               <div>
-                <p className="text-[10px] font-normal">Start Date: <span className="font-semibold">{formatDate(new Date())}</span></p>
+                <p className="text-[10px] font-normal">Start Date: <span className="font-semibold">{format(new Date(), 'MMM dd')}</span></p>
               </div>
             </div>
           </div>
