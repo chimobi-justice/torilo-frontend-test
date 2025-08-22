@@ -1,0 +1,15 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  background-color: #FAFAFA;
+}
+
+.active {
+  background: #EBEFFA;
+  color: #4069D0;
+  padding: 10px 17px;
+  border-bottom: 1px solid #4069D0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  font-weight: 600;
+}
