@@ -169,7 +169,7 @@ Redux helpers:
 
 **Justice Chimobi**
 
-*   LinkedIn: [https://www.linkedin.com/in/justice-chimobi](https://www.linkedin.com/in/justice-chimobi)
+*   Github: [https://www.github.com/chimobi-justice](https://www.github.com/chimobi-justice)
 ---
 
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
